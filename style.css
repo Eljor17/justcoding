@@ -1,0 +1,294 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+ body {
+   background: linear-gradient(to bottom right, #1c003a, #000000, #000000, #000000, #001c3a);
+   height: 100vh;
+ }
+ .card {
+   width: 640px;
+   height: 400px;
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   -webkit-perspective: 1200px;
+   perspective: 1200px;
+   transition: 1s;
+ }
+ .card:hover {
+   transform: rotate(-5deg);
+ }
+ .card:hover .outside {
+   transform: rotateY(-130deg);
+ }
+ .outside,
+ .inside {
+   height: 100%;
+   width: 50%;
+   position: absolute;
+   left: 50.1%;
+ }
+ .inside {
+   background: linear-gradient(to bottom right, #540054 , #bf4193);
+   font-size: large;
+   line-height: 2;
+   padding: 0 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   left: 50%;
+ }
+ .outside {
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   z-index: 1;
+   transform-origin: left;
+   transition: 2s;
+   cursor: pointer;
+ }
+ .front,
+ .back {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   transform: rotateX(0deg);
+ }
+ .front {
+  background: linear-gradient(to bottom right, #002147, #060d2d, #0e1a5b, #192882, #0e1a5b, #060d2d, #002147);
+ }
+ .front p {
+  text-shadow: 0 0 7px #fff, 
+0 0 10px #fff,
+0 0 21px #fff,
+0 0 42px green,
+0 0 82px green,
+0 0 92px green,
+0 0 102px green,
+0 0 151px green;
+}
+ .back {
+   transform: rotateY(180deg);
+   background: linear-gradient(to bottom left, #540054 , #bf4193);
+ }
+ .front img.animated-gif {
+   height: auto;
+   transform: translate(80%, 68%);
+ }
+ .outside p {
+   font-size: 23px;
+   text-transform: uppercase;
+   margin-top: 30px;
+   text-align: center;
+   letter-spacing: 6px;
+   color: #000046;
+ }
+ .inside img.animated-gif {
+   width: 120px;
+   height: auto;
+ }
+.twinkling-dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 3.3%;
+  top: 45%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot2 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 20%;
+  top: 27%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot3 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 33%;
+  top: 40%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot4 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 48%;
+  top: 54%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot5 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 55%;
+  top: 85%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot6 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 80%;
+  top: 83%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.twinkling-dot7 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 85%;
+  top: 38%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow:
+    0 0 5px 3px #fff,
+    0 0 5px 5px #f0f,
+    0 0 5px 5px #0ff;
+  animation: twinkling 1.5s infinite;
+}
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
